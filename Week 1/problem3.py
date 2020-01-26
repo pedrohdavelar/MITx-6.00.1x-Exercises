@@ -4,7 +4,9 @@ Created on Sun Jan 26 15:26:15 2020
 
 @author: Pedro
 """
+
 '''
+#first try - failed hard!
 s = "string"
 s = input("Type your string: ")
 current_answer = ""
@@ -44,7 +46,7 @@ for letter in s:
 print(answer)    
 '''
 
-'''
+
 #this code worked
 s = "string"
 s = input("type your string :")
@@ -87,8 +89,10 @@ for letter in s:    #for every letter in the string s, we should calculate the l
     cur_letter += 1 #having finished the iteration for a single character, we jump to the next and increase this counter
     
 print(fin_answer)
-'''
 
+
+'''
+#solution for the problem. removed print commands so it would be accepted
 cur_answer = "" #currently evaluated answer
 fin_answer = "" #final answer with biggest length
 count = 0       #counter
@@ -110,6 +114,7 @@ for letter in s:    #for every letter in the string s, we should calculate the l
     if(len(cur_answer) > len(fin_answer)):  #if the length of the currently evaluated alphabetical string is bigger than the current final string, then the
         fin_answer = cur_answer             #then the current evaluated string becomes our final answer
     else:
-    cur_letter += 1 #having finished the iteration for a single character, we jump to the next and increase this counter
+        cur_letter += 1 #having finished the iteration for a single character, we jump to the next and increase this counter
     
 print(fin_answer)
+'''
